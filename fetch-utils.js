@@ -22,6 +22,8 @@ export async function getCountries(name, continent) {
     }
 
     // > Part A: `await` the query and return the response
+    const response = await query;
+    return response;
 }
 
 export async function getContinents() {
