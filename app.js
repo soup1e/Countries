@@ -59,6 +59,7 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(searchForm);
     // > Part C: Call findCountries with name and continent from formData
+    findCountries(formData.get('name'), formData.get('continent'));
 });
 
 /* Display Functions */
